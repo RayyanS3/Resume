@@ -1,0 +1,265 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez & Mohammad Mahdi Mahboob
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+% Better clarity of linking of stuff
+\let\orighref\href
+\renewcommand{\href}[2]{\orighref{#1}{#2\,\faExternalLink}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Mohammad Mahdi Mahboob} \\ \vspace{1pt}
+    Hamilton, Ontario, Canada \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ (647) 821-9414 ~ \orighref{mailto:mahbom2@mcmaster.ca}{\raisebox{-0.2\height}\faEnvelope\  \underline{mahbom2@mcmaster.ca}} ~ 
+    \orighref{https://linkedin.com/in/mahboobmmahdi/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/mahboobmmahdi}}  ~
+    \orighref{https://github.com/MahboobMMonza}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/MahboobMMonza}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McMaster University}{Sep. 2021 -- Apr. 2026}
+      {Bachelor of Engineering, Software Engineering Co-op}{Hamilton, ON}
+  \resumeSubHeadingListEnd
+
+    %\resumeSubHeadingListStart
+    \begin{multicols}{3}
+        \begin{itemize}[itemsep=-3pt, parsep=3.5pt]
+            \item\small Cumulative GPA: 3.9/4.0
+            \item 2022 and 2023 NSERC USRA research award recipient
+            \item 2021--2023 Dean's Honour List
+            \item SFWRENG Unix \& C Development Fundamentals course TA
+            \item Competitive Programming enthusiast
+            \item McMaster MSA Apologetics and Socials sub-director
+        \end{itemize}
+    \end{multicols}
+    \vspace*{3.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:}{ Java, JavaScript, C, C++, C\#, Python, Go/Golang, Bash, SQL, Rust, Lua, MATLAB/Simulink} \\
+     \textbf{Developer Tools:}{ Vim/Neovim, Eclipse, Visual Studio, IntelliJ and other JetBrains IDEs} \\
+     \textbf{Technologies/Frameworks:}{ Linux, Apache Maven, JUnit, Arduino, Make, Git, OpenCV} \\
+     \textbf{Relevant Courses:}{ Data Structures \& Algorithms, Concurrent Systems Design, Databases, Object-Oriented Programming} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Magna Electronics}{May 2024 -- July 2025}
+      {Software Engineering Intern | DevOps \& Product Engineering}{Brampton, ON}
+      \resumeItemListStart
+        \resumeItem{Facilitated parallel development of crucial software modules with a 100\% efficiency increase by refining Git pipelines}
+        \resumeItem{Automated 85\% of top-view camera calibration processes for over 20 production and development vehicles}
+        \resumeItem{Automated and parallelized KPI calculations in Python, leading to over 900\% speedup in calculation time}
+        \resumeItem{Developed C++ tooling to test and validate camera warping for image processing in simulation environments}
+      \resumeItemListEnd
+  
+    \resumeSubheading
+      {McMaster University}{Sept. 2023 -- Dec. 2023}
+      {Undergraduate Software Engineering Teaching Assistant}{Hamilton, ON}
+      \resumeItemListStart
+        \resumeItem{Teaching Assistant for SFWRENG Unix \& C Development Fundamentals course}
+        \resumeItem{Conducted weekly lab sessions to teach students shell scripting, C programming, and Linux tools}
+        \resumeItem{Supervised students during bi-weekly lab evaluations}
+        \resumeItem{Collaborated with course instructor and other teaching assistants to mark all evaluated labs and a final project within one week of submission deadlines}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {McSCert}{May 2023 -- Aug. 2023}
+      {Undergraduate Software Engineering Research Assistant}{Hamilton, ON}
+      \resumeItemListStart
+        \resumeItem{Developed an automatic emergency braking system for a 1/10\textsuperscript{th} scale autonomous car using Robot Operating System (ROS), MATLAB Simulink, and Linux}
+        \resumeItem{Designed and implemented configuration GUI for domain-specific applications using Eclipse SWT, providing an interface that is 70\% more
+        accessible}
+        \resumeItem{Migrated a Java Eclipse plugin project to Apache Maven using Eclipse Tycho}
+        \resumeItem{Designed and implemented circuitry to safely distribute power to a 1/10\textsuperscript{th} scale autonomous car}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {McMaster University}{May 2022 -- Aug. 2022}
+      {Undergradutate Software Engineering Research Assistant}{Hamilton, ON}
+      \resumeItemListStart
+        \resumeItem{Co-authored a MATLAB toolbox implementing a Search-Based Software Testing (SBST) framework called \textbf{ATheNA}}
+        \resumeItem{Automated testing and analysis of Simulink models on over 40 benchmarks using computational server nodes on other SBST tools, leading to a 60\% increase in productivity}
+        \resumeItem{Developed code, product documentation, and other media used for projects and effective communication with superiors}
+        \resumeItem{Contributed to research in Software Engineering, including co-authoring academic and conference papers}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \iffalse
+      \resumeProjectHeading
+          {\href{https://github.com/MahboobMMonza/MeshIslandGenerator}{\textbf{Mesh\textbackslash Island Generator}} $|$ \emph{McMaster University Software Development course project}}{January 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Created a CLI tool which produces images representing grid and Voronoi meshes, which can transform into islands}
+            \resumeItem{Collaborated with project teammates to simulate an Agile development environment}
+            \resumeItem{Introduced additional changes to improve extensibility, project quality, and incorporate lessons learned from the course}
+            \resumeItem{Implemented various software design patterns to make the code modular and easily extensible}
+            \resumeItem{Utilized Java to build project with an OOP approach and Apache Maven to easily build, test, and deploy the software}
+          \resumeItemListEnd
+          \vspace{-13pt}
+    \fi
+          \resumeProjectHeading
+          {\href{https://www.mathworks.com/matlabcentral/fileexchange/116095-athena}{\textbf{ATheNA}} $|$ 
+          \emph{Faculty of Engineering -- McMaster University}}{July -- Aug. 2022}
+          \resumeItemListStart
+            \resumeItem{Designed and developed a toolbox implementing a novel SBST framework in MATLAB Simulink}
+            \resumeItem{Implemented cross-platform compatibility and licensing workarounds with dependency libraries}
+            \resumeItem{Refactored and thoroughly documented existing project code to make it over 70\% more readable}
+            \resumeItem{Tested toolbox on various Simulink models}
+            \resumeItem{Published the project on GitHub as well as the MATLAB File Exchange}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%
+%-----------INVOLVEMENT---------------
+\iffalse
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Hub Code Camp}{November 2020 -- 2022}{Co-founder/Executive Coordinator}{Victoria Park Hub Code Camp}
+            \resumeItemListStart
+                \resumeItem{Co-founded, designed, instructed, and currently manage a code camp for youth to learn programming and computer science}
+                \resumeItem{Co-authored multiple slideshows and compiled problem sets teaching various concepts in programming and data structure and algorithms}
+                \resumeItem{Collaborated with a local community centre and volunteers to operate a program running weekly lessons, teaching over 50 students in the community programming concepts and problem-solving skills}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+\fi
+
+\end{document}
